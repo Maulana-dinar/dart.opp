@@ -27,7 +27,7 @@ class Expense {
       amount = baseAmount * (1 + tipPercent / 100),
       category = 'Makanan',
       date = DateTime.now(),
-      notes = 'Termasuk tip ${tipPercent}%';
+      notes = 'Termasuk tip $tipPercent%';
 
   // Constructor expense berulang
   Expense.recurring(

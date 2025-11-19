@@ -24,7 +24,7 @@ class Expense {
 
   // Menampilkan ringkasan singkat expense
   String getSummary() {
-    return '$description - \$${amount.toStringAsFixed(2)} (${category}, ${date.toLocal()})';
+    return '$description - \$${amount.toStringAsFixed(2)} ($category, ${date.toLocal()})';
   }
 }
 

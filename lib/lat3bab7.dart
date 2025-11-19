@@ -28,14 +28,11 @@ class RecurringExpense extends Expense {
   String frequency; // Harian, Mingguan, Bulanan
 
   RecurringExpense({
-    required String description,
-    required double amount,
-    required String category,
+    required super.description,
+    required super.amount,
+    required super.category,
     required this.frequency,
   }) : super(
-          description: description,
-          amount: amount,
-          category: category,
           date: DateTime.now(),
         );
 
@@ -68,15 +65,13 @@ class SubscriptionExpense extends RecurringExpense {
   DateTime? endDate;
 
   SubscriptionExpense({
-    required String description,
-    required double amount,
+    required super.description,
+    required super.amount,
     required this.provider,
     required this.plan,
     required this.startDate,
     this.endDate,
   }) : super(
-          description: description,
-          amount: amount,
           category: 'Langganan',
           frequency: 'bulanan',
         );

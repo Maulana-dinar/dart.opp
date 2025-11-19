@@ -189,7 +189,7 @@ class BudgetManager {
 
   // Generate laporan budget lengkap
   void generateBudgetReport() {
-    print('\n' + '=' * 70);
+    print('\n${'=' * 70}');
     print('📊 LAPORAN MANAJEMEN BUDGET');
     print('=' * 70);
     print('Tanggal Laporan: ${DateFormat('dd MMM yyyy HH:mm').format(DateTime.now())}\n');

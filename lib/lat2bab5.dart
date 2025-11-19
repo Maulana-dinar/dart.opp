@@ -30,14 +30,12 @@ class TravelExpense extends Expense {
   final int tripDuration;
 
   TravelExpense({
-    required String description,
-    required double amount,
+    required super.description,
+    required super.amount,
     required this.destination,
     required this.tripDuration,
     DateTime? date,
   }) : super(
-          description: description,
-          amount: amount,
           category: 'Perjalanan',
           date: date ?? DateTime.now(),
         );
@@ -68,6 +66,7 @@ class TravelExpense extends Expense {
   }
 
   // Reuse formatter dari parent
+  @override
   String _formatRupiah(double value) {
     return value.toStringAsFixed(2);
 }

@@ -33,7 +33,7 @@ class Expense {
   }) : date = date ?? DateTime.now();
 
   void payWith(PaymentMethod method) {
-    print('🧾 Pembayaran untuk "$description" (${category})');
+    print('🧾 Pembayaran untuk "$description" ($category)');
     method.processPayment(amount);
   }
 }

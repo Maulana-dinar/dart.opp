@@ -36,14 +36,12 @@ class TravelExpense extends Expense {
   int tripDuration;
 
   TravelExpense({
-    required String description,
-    required double amount,
+    required super.description,
+    required super.amount,
     required this.destination,
     required this.tripDuration,
     DateTime? date,
   }) : super(
-          description: description,
-          amount: amount,
           category: 'Perjalanan',
           date: date ?? DateTime.now(),
         );

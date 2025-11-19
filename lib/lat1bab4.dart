@@ -1,6 +1,6 @@
 class Category {
-  String _name;
-  String _icon;
+  final String _name;
+  final String _icon;
   double _budget;
 
   Category({

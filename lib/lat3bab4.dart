@@ -1,5 +1,5 @@
 class BankAccount {
-  String _accountHolder;
+  final String _accountHolder;
   double _balance;
   String _pin;
 

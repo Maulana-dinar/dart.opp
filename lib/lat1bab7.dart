@@ -36,15 +36,12 @@ class BusinessExpense extends Expense {
   bool isReimbursable;
 
   BusinessExpense({
-    required String description,
-    required double amount,
-    required String category,
+    required super.description,
+    required super.amount,
+    required super.category,
     required this.client,
     this.isReimbursable = true,
   }) : super(
-          description: description,
-          amount: amount,
-          category: category,
           date: DateTime.now(),
         );
 

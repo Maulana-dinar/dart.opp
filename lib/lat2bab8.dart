@@ -99,9 +99,7 @@ void main() {
   card.processPayment(100000.0);
 
   // ✅ Bisa refund (karena CreditCard implements Refundable)
-  if (card is Refundable) {
-    card.processRefund(50000.0);
-  }
+  card.processRefund(50000.0);
 
   print('----------------------');
 

@@ -1,5 +1,5 @@
 class User {
-  String _name;
+  final String _name;
   String _email;
   int _age;
 
